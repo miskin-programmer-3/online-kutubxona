@@ -23,11 +23,11 @@
 
     <section class="header-1">
 
-        <a href="#" class="logo"> <i class="fas fa-book"></i> Online kutubxona </a>
+        <a href="#" class="logo"> <i class="fas fa-book"></i> Elektron darsliklar </a>
 
         <form action="" class="search-form">
             <input type="search" name="" placeholder="qidirish.." id="search-box">
-            <label for="search-box" class="fas fa-search"></label>
+            <button type="submit" class="fas fa-search"></button>
         </form>
 
         <div class="icons">
@@ -42,9 +42,9 @@
     <div class="header-2">
         <nav class="navbar">
             <a href="#home">Bosh sahifa</a>
-            <a href="#featured">Xususiyatlar</a>
-            <a href="#arrivals">Kitoblar</a>
-            <a href="#reviews">Sharxlar</a>
+            <a href="#featured">maktab darsliklari</a>
+            <a href="#arrivals">Audio kitoblar</a>
+            <a href="#reviews">til organish</a>
             <a href="#blogs">Blogimiz</a>
         </nav>
     </div>
@@ -95,8 +95,8 @@
         <div class="row">
     
             <div class="content">
-                <h3>50% gacha chegirma</h3>
-                <p>Ushbu saytimiz orqali istalgan turdagi kitoblarni topishingiz mumkin. Saytimizda har hil badiiy kitoblar va ilmiy kitoblar bor</p>
+                <h3>sizga kerakli elektron darsliklar</h3>
+                <p>Ushbu saytimiz orqali siz ko'plab turdadi elektron darsliklarni topib olishingiz mumkin</p>
                 <a href="#" class="btn">Sotib olish</a>
             </div>
     
@@ -128,23 +128,23 @@
         <i class="fas fa-shipping-fast"></i>
         <div class="content">
             <h3>bepul yetkazish</h3>
-            <p>100 ming so'mdan</p>
+            <p>59 ming so'mdan</p>
         </div>
     </div>
 
     <div class="icons">
         <i class="fas fa-lock"></i>
         <div class="content">
-            <h3>xavfsiz to'lov</h3>
-            <p>100% xavfsiz to'lov</p>
+            <h3>Xavfsiz manba</h3>
+            <p>100% ishonchli</p>
         </div>
     </div>
 
     <div class="icons">
         <i class="fas fa-redo-alt"></i>
         <div class="content">
-            <h3>ortga qaytarish</h3>
-            <p>10 kun ichida</p>
+            <h3>savollarga javob qaytarish</h3>
+            <p>tezkor</p>
         </div>
     </div>
 
@@ -160,17 +160,20 @@
 
 <!-- icons section ends -->
 
+
+
+
 <!-- featured section starts  -->
 
 <section class="featured" id="featured">
 
-    <h1 class="heading"> <span>Mashxur kitoblar</span> </h1>
+    <h1 class="heading"> <span>Maktb darsliklari</span> </h1>
 
-    <div class="swiper featured-slider">
+    <div class="swiper featured-slider slayd">
 
         <div class="swiper-wrapper">
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" data-swiper-slide-index="0">
                 <div class="icons">
                     <a href="#" class="fas fa-search"></a>
                     <a href="#" class="fas fa-heart"></a>
@@ -180,13 +183,13 @@
                     <img src="image/book-1.png" alt="">
                 </div>
                 <div class="content">
-                    <h3>mashxur kitoblar</h3>
-                    <div class="price">59 900 <span>69 900</span></div>
-                    <a href="#" class="btn">savatga qo'shish</a>
+                    <h3 data-title="algebra">algebra</h3>
+                    <div class="price">bepul <span></span></div>
+                    <a href="algebra.html" class="btn">yuklab olish</a>
                 </div>
             </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" data-swiper-slide-index="1">
                 <div class="icons">
                     <a href="#" class="fas fa-search"></a>
                     <a href="#" class="fas fa-heart"></a>
@@ -196,13 +199,13 @@
                     <img src="image/book-2.png" alt="">
                 </div>
                 <div class="content">
-                    <h3>mashxur kitoblar</h3>
-                    <div class="price">59 900 <span>69 900</span></div>
-                    <a href="#" class="btn">savatga qo'shish</a>
+                    <h3 data-title="fizika">fizika</h3>
+                    <div class="price">bepul <span></span></div>
+                    <a href="fizika.html" class="btn">yuklab olish</a>
                 </div>
             </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" data-swiper-slide-index="2">
                 <div class="icons">
                     <a href="#" class="fas fa-search"></a>
                     <a href="#" class="fas fa-heart"></a>
@@ -212,13 +215,13 @@
                     <img src="image/book-3.png" alt="">
                 </div>
                 <div class="content">
-                    <h3>mashxur kitoblar</h3>
-                    <div class="price">59 900 <span>69 900</span></div>
-                    <a href="#" class="btn">savatga qoshish</a>
+                    <h3 data-title="biologiya">biologiya</h3>
+                    <div class="price">bepul <span></span></div>
+                    <a href="biologiya.html" class="btn">yuklab olish</a>
                 </div>
             </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" data-swiper-slide-index="3">
                 <div class="icons">
                     <a href="#" class="fas fa-search"></a>
                     <a href="#" class="fas fa-heart"></a>
@@ -228,61 +231,19 @@
                     <img src="image/book-4.png" alt="">
                 </div>
                 <div class="content">
-                    <h3>mashxur kitoblar</h3>
-                    <div class="price">59 900 <span>69 900</span></div>
-                    <a href="#" class="btn">savatga qo'shish</a>
+                    <h3 data-title="tarix">ingliz tili</h3>
+                    <div class="price">bepul <spa></spa></span></div>
+                    <a href="ingliz_tili.html" class="btn">yuklab olish</a>
                 </div>
             </div>
 
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/book-5.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>mashxur kitoblar</h3>
-                    <div class="price">59 900 <span>59 900</span></div>
-                    <a href="#" class="btn">savatga qo'shish</a>
-                </div>
-            </div>
+           
 
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/book-6.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>mashxur kitoblarr</h3>
-                    <div class="price">59 900 <span>69 900</span></div>
-                    <a href="#" class="btn">savatga qo'shish</a>
-                </div>
-            </div>
+           
 
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/book-7.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>Mashxur kitoblar</h3>
-                    <div class="price">59 900 <span>69 900</span></div>
-                    <a href="#" class="btn">savatga qo'shish</a>
-                </div>
-            </div>
+            
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" data-swiper-slide-index="7">
                 <div class="icons">
                     <a href="#" class="fas fa-search"></a>
                     <a href="#" class="fas fa-heart"></a>
@@ -292,44 +253,13 @@
                     <img src="image/book-8.png" alt="">
                 </div>
                 <div class="content">
-                    <h3>mashxur kitoblar</h3>
-                    <div class="price">59 900 <span>69 900</span></div>
-                    <a href="#" class="btn">savatga qo'shish</a>
+                    <h3 data-title="ona tili">ona tili</h3>
+                    <div class="price">bepul <span></span></div>
+                    <a href="ona_tili.html" class="btn">yuklab olish</a>
                 </div>
             </div>
 
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/book-9.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>mashxur kitoblar</h3>
-                    <div class="price">59 900 <span>$69 900</span></div>
-                    <a href="#" class="btn">savatga qo'shish</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="image/book-10.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>mashxur kitoblar</h3>
-                    <div class="price">59 900 <span>69 900</span></div>
-                    <a href="#" class="btn">savatga qoshish</a>
-                </div>
-            </div>
-
+            
         </div>
 
         <div class="swiper-button-next"></div>
@@ -363,7 +293,7 @@
 
 <section class="arrivals" id="arrivals">
 
-    <h1 class="heading"> <span>yangiliklar</span> </h1>
+    <h1 class="heading"> <span>audio kitoblar</span> </h1>
 
     <div class="swiper arrivals-slider">
 

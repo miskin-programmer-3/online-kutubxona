@@ -158,3 +158,59 @@ var swiper = new Swiper(".blogs-slider", {
     },
   },
 });
+
+
+
+
+// qidiruv//
+//  const searchBox = document.getElementById('search-box');
+//     const books = document.querySelectorAll('.swiper-slide.box');
+
+//     searchBox.addEventListener('input', function () {
+//         const searchTerm = searchBox.value.toLowerCase();
+//         books.forEach(book => {
+//             const title = book.querySelector('h3').textContent.toLowerCase();
+//             book.style.display = title.includes(searchTerm) ? 'block' : 'none';
+//         });
+//     });
+
+
+// Swiper instance'ni nomlab oling (bu nom sizga kerak)
+// Swiper instance
+// Faqat bir marta chaqiring!
+
+
+
+document.querySelector('.search-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Sahifa yangilanishini to‘xtatamiz
+
+    const query = document.getElementById('search-box').value.toLowerCase().trim();
+    if (!query) return; // Agar qidiruv bo‘sh bo‘lsa hech narsa qilmaymiz
+
+    // H3 elementlarini olamiz
+    const allHeaders = document.querySelectorAll('#featured h3');
+
+    let found = false;
+
+    allHeaders.forEach(h3 => {
+        const text = h3.textContent.toLowerCase();
+
+        if (text.includes(query)) {
+            found = true;
+            // Mos kelgan elementga scroll qilamiz
+            h3.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            // Ixtiyoriy: qidirilgan elementni vizual ko‘rsatish uchun class qo‘shish
+            allHeaders.forEach(h => h.classList.remove('highlight'));
+            h3.classList.add('highlight');
+        }
+    });
+
+    if (!found) {
+        alert('Hech qanday natija topilmadi!');
+    }
+});
+
+
+
+  
