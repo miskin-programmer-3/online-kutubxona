@@ -746,7 +746,10 @@ section{
 
 
 
-
+audio{
+    
+    max-width: 225px;
+}
 
 
 
